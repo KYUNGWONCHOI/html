@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 01</title>
+    <link ref="stylesheet" href="/CSS/reset.css">
+    <style>
+        hr {
+            border-color: red;
+            border-width: 2px;
+        }
+        .wrap {
+            margin: 0 auto;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 600px;
+        }
+        tr>td:first-child {
+            text-align: center;
+            width: 150px;
+        }
+        td, li {
+            display: inline-block;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        .bt {
+            position: absolute;
+            left: 40%;
+            /* margin: 0 auto; */
+        }
+        #pwset-1 {
+            font-size: small;
+        }
+    </style>
+    <script>
+        function getValue() {
+            let p1 = document.getElementById('pw01').value;
+            let p2 = document.getElementById('pw02').value;
+            if(p1.length < 6 || p1.length >12){
+                alert("비밀번호를 다시 확인하세요");
+                return false;
+            }
+            else if(!p1.match(/[a-z]/)){
+                alert("비밀번호를 다시 확인하세요");
+                return false;
+            }
+            else if(!p1.match(/[A-Z]/)){
+                alert("비밀번호를 다시 확인하세요");
+                return false;
+            }
+            else if(!p1[0].match(/[A-Z]/)){
+                alert("비밀번호를 다시 확인하세요");
+                return false;
+            }
+            else if (!(p1 === p2)){
+                alert("비밀번호를 다시 확인하세요");
+                return false;
+            }else{
+                return true;
+            }
+        }
+        // 회원가입 실패시 동작
+        // let result = getValue();
+        // alert(result);   
+        //     function getAlert(result){
+        //         if(result == true){
+                    
+        //         }else if(result == false){
+        //             alert("비밀번호를 다시 확인하세요");
+        //         }
+        //     }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <hr>
+        <form action="/HTML/index.html">
+        <!-- <form> -->
+            <table>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" name="id" required autofocus></td>
+                    <td><a href="#">중복확인</a></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" name="pw" required id="pw01"></td>
+                    <td id="pwset-1">6자 이상</td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input type="password" name="pwconfirm" required id="pw02"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 힌트/답변</td>
+                    <td>
+                        <select name="pwhint" class="selectbar">
+                            <option value="">선택하세요</option>
+                            <option value="30">졸업한 초등학교 이름은?</option>
+                            <option value="31">제일 친한 친구의 핸드폰 번호는?</option>
+                            <option value="32">아버지 성함은?</option>
+                            <option value="33">어머니 성함은?</option>
+                            <option value="34">얼릴 적 내 별명은?</option>
+                            <option value="35">가장 아끼는 물건은?</option>
+                            <option value="36">좋아하는 동물은?</option>
+                            <option value="37">좋아하는 색은?</option>
+                            <option value="38"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>답변</td>
+                    <td><input type="text" name="answer"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="email" name="mail"></td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td><input type="tel" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>메일/sns 정보 수신</td>
+                    <td>
+                        <ul>
+                            <li><label><input type="radio" name="info" value="o">수신</label></li>
+                            <li><label><input type="radio" name="info" value="x">수신거부</label></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>관심분야</td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="interest" value="n1">생두</li>
+                            <li><input type="checkbox" name="interest" value="n2">원두</li>
+                            <li><input type="checkbox" name="interest" value="n3">로스팅</li>
+                            <li><input type="checkbox" name="interest" value="n4">핸드드립</li>
+                            <li><input type="checkbox" name="interest" value="n5">에스프레소</li>
+                            <li><input type="checkbox" name="interest" value="n6">창업</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <div class="bt">
+                <input type="submit" value="회원가입" onclick="getValue()">
+                <input type="reset" value="취소">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

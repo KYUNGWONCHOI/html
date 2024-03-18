@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+    <style>
+        .wrap {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 1200px;
+        }
+        legend {
+            text-align: left;
+        }
+        fieldset {
+            border: 2px solid black;
+        }
+        .button {
+            display: inline-block;
+        }
+        .text>div {
+            display: block;
+        }
+        .text>div>div {
+            display: inline-block;
+        }
+        .text>div>div:first-child {
+            width: 70px;
+        }
+        .bt {
+            margin-left: 10px;
+        }
+        .wrap-header {
+            position: relative;
+            height: 100px;
+        }
+        .im {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .ta {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .wrap-main {
+            height: 300px;
+        }
+        aside {
+            width: 200px;
+            height: 300px;
+            float: left;
+            margin-right: 10px;
+            text-align: left;
+            color: green;
+            background-color: rgb(202, 202, 202);
+            padding: 0;
+            margin: 0;
+        }
+        aside>div {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        section {
+            width: 990px;
+            height: 300px;
+            float: left;
+            background-color: gray;
+            padding: 0;
+            margin: 0;
+        }
+        section>div {
+            height: 300px;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            font-size: 20px;
+            line-height: 50px;
+        }
+        .section-div {
+            margin: 10px;
+        }
+        .wrap-bottom {
+            text-align: center;
+
+        }
+        .nanum-gothic{
+            font-family: "Nanum Gothic Coding", monospace;
+            font-weight: 600;
+            font-style: normal;
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="wrap-header">
+            <header>
+                <fieldset class="ta">
+                    <legend>로그인</legend>
+                    <form>
+                        <div class="text">
+                            <div>
+                                <div>아이디</div>
+                                <div><input type="text"></div>
+                            </div>
+                            <div>
+                                <div>패스워드</div>
+                                <div><input type="password"></div>
+                            </div>
+                        </div>
+                        <div class="bt">
+                            <input type="submit" value="확인" class="button">
+                            <input type="button" value="전달/제출" class="button">
+                            <input type="reset" value="깨끗하게취소" class="button">
+                        </div>
+                    </form>
+                </fieldset>
+                <div class="im">
+                    <img src="/etc/KH_logo.png">
+                </div>
+            </header>
+        </div>
+        <div class="wrap-main">
+            <aside>
+                <div>
+                    <ul>
+                        <li>
+                            <h1>메인</h1>
+                        </li>
+                        <li>
+                            <h1>공지사항</h1>
+                        </li>
+                        <li>
+                            <h1>자유게시판</h1>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="nanum-gothic">
+                <div class="section-div">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </section>
+        </div>
+        <div class="wrap-bottom">
+            <bottom>
+                <div class="bttext">
+                    <div>KH정보교육원 | 사업자등록번호 : 851-87-00622 | 서울 강남 제2014-01호 | 대표자 : 양진선 | 책임자 : 김언제 | 개인정보관리책임자 : 김명주
+                    </div>
+                    <br>
+                    <div>종로지원 : 서울특별시 중구 남대문로 120 대일빌딩 2F, 3F</div>
+                    <div>Copyright@ 1998-2020 KH Information Educational Insitute All Right Reserved</div>
+                </div>
+            </bottom>
+        </div>
+    </div>
+
+</body>
+
+</html>

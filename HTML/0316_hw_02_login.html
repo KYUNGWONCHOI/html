@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="/CSS/reset.css">
+
+    <style>
+        .wrap {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 270px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        legend {
+            text-align: left;
+        }
+        fieldset {
+            border: 2px solid black;
+        }
+        .button {
+            display: inline-block;
+        }
+        .text>div {
+            display: block;
+        }
+        .text>div>div {
+            display: inline-block;
+        }
+        .text>div>div:first-child {
+            width: 70px;
+        }
+        .bt{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <fieldset>
+            <legend>로그인</legend>
+            <form>
+                <div class="text">
+                    <div>
+                        <div>아이디</div>
+                        <div><input type="text"></div>
+                    </div>
+                    <div>
+                        <div>패스워드</div>
+                        <div><input type="password"></div>
+                    </div>
+                </div>
+                <div class="bt">
+                    <input type="submit" value="확인" class="button">
+                    <input type="button" value="전달/제출" class="button">
+                    <input type="reset" value="깨끗하게취소" class="button">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+.movie-list-util{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.movie-list-util .no-result-count{
+    float:left;
+    margin: 0 0 0 20px;
+    padding: 1px 0 0 0;
+    line-height: 34px;
+}
+.btn-onair .movie-list-util .onari-condition{
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 30px;
+    /* text-indent: -9999px; */
+    background: url("../etc/btn-on-air.png") no-repeat 0 2px;
+}
+.movie-list-util .onari-condition .btn-onair{
+    display: block;
+    padding: 0 0 0 30px;
+}
+.no-img{
+    overflow: hidden;
+    width:230px;
+    height:450px;
+    position: relative;
+    float:left;
+    margin:0 0 0 60px;
+    padding: 0;
+}
+.poster{
+    width: 230px;
+    height: 331px;
+}
+.movie-list ol{
+    margin-left: -60px;
+}
+.movie-list-info{
+    position: absolute;
+    top:0px;
+    width: 230px;
+    height: 331px;
+
+}
+
+.rank{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 8px 0 0 10px;
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+    font-weight: 300;
+    line-height: 1.1;
+}
+.rank>.ir{
+    text-indent: -9999px;
+}
+.movie-score{
+    position: absolute;
+    top: 0x;
+    left: 0px;
+    width: 230px;
+    height: 331px;
+    color: white;
+}
+.movieBtn{
+    position: relative;
+    display: block;
+    width:100%;
+    height:100%;
+    padding:20px;
+    color:white;
+    }
+.summary{
+    width:190px;
+    height:152px;
+    overflow: hidden;
+}
+.movie-list ol li .tit-area{
+    position: absolute;
+    width:100%;
+    margin: 15px 0 0 0;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+.movie-list ol li .tit-area .movie-grade{
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top: -10px;
+}
+

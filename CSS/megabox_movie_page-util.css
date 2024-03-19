@@ -1,0 +1,44 @@
+.page-util  {
+    position: relative;
+    width: 1100px;
+    /* margin:  */
+    margin: 0 auto;
+    background-color: rgb(249, 249, 243);
+}
+.page-util .location .home{
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 13px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    background: url("../etc/bg-location-home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 46px;
+}
+.page-util .location a{
+    display: block;
+    /* position: relative; */
+    float: left;
+    height: 42px;
+    margin: 0 0 0 15px;
+    padding: 0;
+    line-height: 46px;
+    color: #666;
+}
+a{
+  background-color: transparent;  
+}
+.page-util .location span{
+    display: block;
+    /* position: relative; */
+    float: right;
+    height: 42px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    line-height: 46px;
+    color: #666;
+}

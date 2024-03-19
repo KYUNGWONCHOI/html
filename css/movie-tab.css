@@ -1,0 +1,25 @@
+.tab {
+    width: 1100px;
+    /* display: block; */
+}
+.tab>nav{
+    display:block;
+}
+
+.tab>nav>ul>li {
+    border: 1px solid #ebebeb;
+    float: left;
+    width: 220px;
+    box-sizing: border-box;
+    height: 41px;
+}
+
+.tab>nav>ul>li:not(:last-child) {
+    border-right: 0;
+}
+
+.tab>nav>ul>li>a {
+    line-height: 40px;
+    display: block;
+    text-align: center;
+}

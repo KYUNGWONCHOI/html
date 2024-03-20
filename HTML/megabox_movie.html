@@ -10,36 +10,34 @@
     <link rel="stylesheet" href="/css/megabox_movie_body.css">
     <link rel="stylesheet" href="/css/megabox_movie_contents.css">
     <link rel="stylesheet" href="/css/megabox_movie_page-util.css">
-    <link rel="stylesheet" href="/css/megabox_movie-list-util.css">
+    <!-- <link rel="stylesheet" href="/css/megabox_movie-list-util.css"> -->
     <!-- <link rel="stylesheet" href="/css/megabox.css"> -->
 
 </head>
 
-<body>
+<body class="wrap">
     <div class="container">
         <div class="page-util">
             <div class="inner-wrap">
-                <div class="location">
-                    <span class="home">영화</span>
-                    <a href="/movie" title="영화 페이지로 이동">
-                        <img src="/etc/ico-btn-more-arr.png">
-                        <span>영화</span>                        
-                    </a>
-                    <a href="/movie" title="전체영화 페이지로 이동">
-                        <img src="/etc/ico-btn-more-arr.png">
-                        <span>전체영화</span>                       
-                    </a>
-                </div>
+                <span class="home ir"><img src="/etc/bg-location-home.png"> 영화</span>
+                <a href="/movie" title="영화 페이지로 이동">
+                    <img src="/etc/ico-btn-more-arr.png">
+                    <span>영화</span>
+                </a>
+                <a href="/movie" title="전체영화 페이지로 이동">
+                    <img src="/etc/ico-btn-more-arr.png">
+                    <span>전체영화</span>
+                </a>
             </div>
         </div>
 
         <!-- contents -->
-        <div id="contents">
+        <div class="contents">
             <!-- inner-wrap -->
             <div class="inner-wrap">
                 <h2 class="tit">전체영화</h2>
                 <div class="tab-list fixed">
-                    <ul id="topMenu">
+                    <ul>
                         <li class="on"><a href="/movie" title="박스오피스 탭으로 이동">박스오피스</a></li>
                         <li><a href="/movie/comingsoon" title="상영예정작 탭으로 이동">상영예정작</a></li>
                         <li><a href="/movie/special" title="특별상영 탭으로 이동">특별상영</a></li>
@@ -85,8 +83,7 @@
                     <!-- 필름소사이어티 -->
                     <div class="topSort" style="display: none;">
                         <div class="movie-sorting sortTab">
-                            <span><button type="button" class="btn on" sort-type="ticketing"
-                                    tab-cd>전체</button></span>
+                            <span><button type="button" class="btn on" sort-type="ticketing" tab-cd>전체</button></span>
 
                         </div>
 
@@ -99,8 +96,7 @@
                     <!-- 클래식소사이어티 -->
                     <div class="topSort" style="display: none;">
                         <div class="movie-sorting sortTab">
-                            <span><button type="button" class="btn on" sort-type="ticketing"
-                                    tab-cd>전체</button></span>
+                            <span><button type="button" class="btn on" sort-type="ticketing" tab-cd>전체</button></span>
 
                         </div>
 
@@ -131,7 +127,7 @@
                     <div class="movie-search">
                         <input type="text" title="영화명을 입력하세요" id="ibxMovieNmSearch" name="ibxMovieNmSearch"
                             placeholder="영화명 검색" class="input-text">
-                        <button type="button" class="btn-search-input" id="btnSearch">검색</button>
+                        <button type="button" class="btn-search-input ir" id="btnSearch">검색</button>
                     </div>
                 </div>
                 <!--// movie-list-util -->

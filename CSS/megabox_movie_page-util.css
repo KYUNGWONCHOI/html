@@ -1,44 +1,69 @@
 .page-util  {
-    position: relative;
     width: 1100px;
-    /* margin:  */
     margin: 0 auto;
-    background-color: rgb(249, 249, 243);
 }
-.page-util .location .home{
+.page-util .inner-wrap{
     overflow: hidden;
-    display: block;
-    float: left;
-    width: 13px;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    text-indent: -9999px;
-    background: url("../etc/bg-location-home.png");
-    background-repeat: no-repeat;
-    background-position: center;
     line-height: 46px;
+    background-color: #f5f5f5;
 }
-.page-util .location a{
-    display: block;
-    /* position: relative; */
-    float: left;
-    height: 42px;
-    margin: 0 0 0 15px;
-    padding: 0;
-    line-height: 46px;
-    color: #666;
+.page-util .inner-wrap .home{
+    display: inline-block;
+    border-image-repeat: no-repeat;
 }
-a{
-  background-color: transparent;  
-}
-.page-util .location span{
-    display: block;
-    /* position: relative; */
-    float: right;
-    height: 42px;
+.page-util .inner-wrap>span{
+    display: inline-block;
     margin: 0 0 0 10px;
-    padding: 0;
-    line-height: 46px;
     color: #666;
 }
+.page-util .inner-wrap a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0 0 15px;
+    color: #666;
+}
+.page-util .inner-wrap a img{
+    display: inline-block;
+}
+.movie-search{
+    float: right;
+    width:230px;
+    height:36px;
+    position: relative;
+    border: 1px solid #c6c6c6;
+    box-sizing: border-box;
+}
+.movie-search>input{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:177px;
+    padding: 0 10px;
+    margin: 0 3px 0 0;
+    height:36px;
+    border: none;
+}
+.movie-search>button{
+    position:absolute;
+    display: block;
+    top:0px;
+    right:0px;
+    width:30px;
+    padding: 0;
+    margin: 0px;
+    /* height:30px; */
+    line-height: 36px;
+    height: 100%;
+    border: 0;
+    background: url("../etc/btn-search-input.png") no-repeat 6px 6px;
+}
+.topSort{
+    padding: 0 0 40px 0;
+}
+.topSort .sortTab{
+    display: inline-block;
+}
+
+
+

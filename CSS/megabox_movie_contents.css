@@ -1,41 +1,107 @@
-#contents{
-    width: 100%;
-    margin: 0;
-    padding: 40px 0 0 0;
+.contents{
+    width: 1100px;
+    margin: 0 auto;
 }
-h2.tit{
-    padding: 0 0 26px 0;
-    font-size: 1.8666em;
-    font-weight: 400;
-    letter-spacing: -1px;
-    line-height: 1.1;
-    margin: 0;
-    display: block;
-    color: #222;
+.contents .inner-wrap{
+    overflow: hidden;
+    height: 100%;
+    line-height: 46px;
 }
-ul{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-.tab-list>ul{
-    position: relative;
-    width: 100%;
-    height: 42px;
-}
-.tab-list>ul>li{
+.contents .inner-wrap .tit{
+    padding: 40px 0px;
+    width: 1100px;
     float: left;
-    width: 220px;
+    
+}
+.contents .inner-wrap .tab-list{
+    margin: 0;
+    padding: 0;
+    
+}
+.contents .inner-wrap .tab-list>ul{
+    padding: 0;
+    margin: 0;
+}
+.contents .inner-wrap .tab-list>ul>li{
+    float:left;
+    width: 218px;
     height: 41px;
-    text-align: center;
     line-height: 41px;
-    border: 1px solid #c6c6c6;
+    text-align: center;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    border-left: 1px solid #c6c6c6;
+    box-sizing: border-box;
+}
+.contents .inner-wrap .tab-list>ul>li>a{
+    text-decoration: none;
+}
+.contents .inner-wrap .tab-list>ul>li:last-child{
+    border-right: 1px solid #c6c6c6;
 }
 
-.tab-list>ul>li>a{
+.contents .inner-wrap .movie-list-util .btn-onair{
+    overflow: hidden;
     display: block;
-    
+    float: left;
+    /* width: 50px; */
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 30px;
+    background: url("../etc/btn-on-air.png") no-repeat 0 2px;
+}
+.movie-list .list .no-img{
+    overflow: hidden;
+    width:230px;
+    height:450px;
+    position: relative;
+    float:left;
+    margin:0 0 0 60px;
+    padding: 0;
+}
+.poster{
+    width: 230px;
+    height: 331px;
+}
+.movie-list ol{
+    margin-left: -60px;
+}
+.movie-list-info{
+    position: absolute;
+    top:0px;
+    width: 230px;
+    height: 331px;
+}
+.rank{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 8px 0 0 10px;
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+    font-weight: 300;
+    line-height: 1.1;
+}
+.movieBtn{
+    position: relative;
+    display: block;
+    width:100%;
+    height:100%;
+    padding:20px;
+    color:white;
+}
+.summary{
+    display: none;
+    width:190px;
+    height:152px;
+    overflow: hidden;
+}
+.movie-list ol li .tit-area .movie-grade{
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top: -10px;
 }

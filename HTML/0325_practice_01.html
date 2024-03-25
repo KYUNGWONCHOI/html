@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+        $(loadedHandler);
+
+        function loadedHandler() {
+            $("#allcheck").on("click", allcheckedHandler);
+            $(".box").on("click", boxcheckedHanedler);
+            // $(".box").on("checked", allstate);
+        }
+
+        function allcheckedHandler() {
+            var allState = $(this).prop("checked");
+            var boxNum =  $(".box").data("num");
+            console.log("test allcheckHandler");
+            if(allState == true){
+                console.log("test if");
+                $(".box").prop("checked", true)                
+            }
+        }
+
+        function boxcheckedHanedler() {
+            $(".box").prop("checked", function(boxnumA, resultA){
+                if(resultA == false){
+                    $("#allcheck").prop("checked",false);
+                }
+                
+                
+            });
+        }
+    
+    </script>
+
+    <style>
+        body {
+            width: 1000px;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: azure;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            width: 550px;
+            margin: 0 auto;
+        }
+
+        .addedlist {
+            text-align: center;
+        }
+
+        .warp-text {
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Practice 1</h1>
+        <div>
+            <fieldset>
+                <legend>취미</legend>
+
+                <table>
+                    <tr>
+                        <td><label><input type="checkbox" id="allcheck" data-num="0"><span>전체선택</span></label></td>
+                        <td><label><input type="checkbox" data-num="1" class="box"><span>종합</span></label></td>
+                        <td><label><input type="checkbox" data-num="2" class="box"><span>소설</span></label></td>
+                        <td><label><input type="checkbox" data-num="3" class="box"><span>시/에세이</span></label></td>
+                        <td><label><input type="checkbox" data-num="4" class="box"><span>경제/경영</span></label></td>
+                        <td><label><input type="checkbox" data-num="5" class="box"><span>자기계발</span></label></td>
+                        <td><label><input type="checkbox" data-num="6" class="box"><span>아동</span></label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label><input type="checkbox" data-num="7" class="box"><span>여행</span></label></td>
+                        <td><label><input type="checkbox" data-num="8" class="box"><span>과학</span></label></td>
+                        <td><label><input type="checkbox" data-num="9" class="box"><span>역사/문화</span></label></td>
+                        <td><label><input type="checkbox" data-num="10" class="box"><span>외국어</span></label></td>
+                        <td><label><input type="checkbox" data-num="11" class="box"><span>컴퓨터</span></label></td>
+                        <td><label><input type="checkbox" data-num="12" class="box"><span>만화</span></label></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div class="addedlist"></div>
+        </div>
+    </div>
+</body>
+
+</html>
